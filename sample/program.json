@@ -1,0 +1,17 @@
+{
+  "budget": 2,
+  "bad_at_code": "E_BAD_AT",
+  "bad_names_code": "E_BAD_NAMES",
+  "dup_code": "E_DUP_AT",
+  "empty_code": "E_EMPTY",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "stmts": [], "live": [], "runs": 0, "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "stmt", "at": 1, "defs": ["x"], "uses": ["a"] },
+    { "id": 2, "kind": "stmt", "at": 2, "defs": ["y"], "uses": ["x"] },
+    { "id": 3, "kind": "stmt", "at": 3, "defs": [], "uses": ["y"] },
+    { "id": 4, "kind": "live" },
+    { "id": 5, "kind": "stmt", "at": 4, "defs": [], "uses": ["a"] },
+    { "id": 6, "kind": "live" }
+  ]
+}
